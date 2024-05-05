@@ -68,6 +68,7 @@ int main(){
     }
 }
 //Searching 
+
 #include <stdio.h>
 int main(){
     int i,position,val,flag=0;
@@ -88,3 +89,6 @@ int main(){
         printf("Element not found\n");
     }
 }
+
+
+
