@@ -34,7 +34,6 @@ int fact(int x) {
     }
     return f;
 }
-
 int main() {
     int n, r;
     printf("Enter n:\n");

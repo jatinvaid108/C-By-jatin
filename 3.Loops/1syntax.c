@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main() {
     // Program: Print a message multiple times
     printf("==== Program: Print a message multiple times ====\n");

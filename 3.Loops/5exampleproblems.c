@@ -48,6 +48,25 @@ int main() {
 
 
 //  ******************************************************************
+// Program: Calculating the sum of even digits of a given number
+#include <stdio.h>
+int main(){
+   int num,sum_even=0,last_digit,sum_odd; 
+   printf("Enter the num: \n");
+   scanf("%d",&num);
+   int i=1;
+   while(i>0){
+    last_digit=num%10;
+    num=num/10;
+    if(last_digit%2==0){
+        sum_even=sum_even+last_digit;
+    }
+    else sum_odd=sum_odd+last_digit;
+    i++;
+   }
+   printf("The sum of even digits of number is %d \n",sum_even);
+   printf("The sum of even digits of number is %d \n",sum_odd);
+}
 
 
 #include <stdio.h>

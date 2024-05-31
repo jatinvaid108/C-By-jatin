@@ -31,7 +31,6 @@ int main() {
 // Smart method, Better Method
 #include <stdio.h>
 #include <string.h>
-
 int main() {
     char a[] = "Jatin is a coder";
     printf("%s\n", a);

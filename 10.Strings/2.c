@@ -21,16 +21,16 @@ int main() {
 
 //Input the string and count all the vowels in the string :----
 #include <stdio.h>
+#include <string.h>
 int main() {
     char x[] = "HELLO HOW ARE YOU! I AM FINE ";
-    int n = 0;
+    int n =strlen(x);
     int count = 0;
-    while (x[n] != '\0') {
-        if (x[n] == 'a' || x[n] == 'e' || x[n] == 'i' || x[n] == 'o' || x[n] == 'u' ||
-            x[n] == 'A' || x[n] == 'E' || x[n] == 'I' || x[n] == 'O' || x[n] == 'U') {
+    for(int i=0;i<n;i++) {
+        if (x[i] == 'a' || x[i] == 'e' || x[i] == 'i' || x[i] == 'o' || x[i] == 'u' ||
+            x[i] == 'A' || x[i] == 'E' || x[i] == 'I' || x[i] == 'O' || x[i] == 'U') {
             count++;
         }
-        n++;
     }
     printf("No. of vowels in your string is :- %d", count);
 }
@@ -38,15 +38,14 @@ int main() {
 //Input a string all update all its even position to character 'a' considering 0 base indexing
 #include <stdio.h>
 int main() {
-    char x[100];
+    char sen[100];
     printf("Enter your string:\n");
-    fgets(x, 100, stdin);
-    int n = 0;
-    while (x[n] != '\0') {
-        if (n % 2 == 0) {
-            x[n] = 'a';
+    fgets(sen, 100, stdin);
+    int n = strlen(sen);
+    for(int i=0;i<n;i++) {
+        if (i % 2 == 0) {
+            sen[i] = 'a';
         }
-        n++;
     }
-    printf("%s", x);
+    printf("%s", sen);
 }

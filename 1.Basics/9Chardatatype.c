@@ -1,6 +1,5 @@
 //char is a type of data type which can stores all the values of like that is written in our keyboard even number special Characters etc.
 #include <stdio.h>
-
 int main() {
     char x;
     printf("Enter the char value you would like to store: ");

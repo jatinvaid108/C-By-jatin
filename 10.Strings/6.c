@@ -30,3 +30,18 @@ int main() {
     int x = atoi(s); // Convert string to integer
     printf("%d\n", x);
 }
+
+
+
+#include <stdio.h>
+int main(){
+  int resversed=0,num,last_digit;
+  scanf("%d",&num);
+  while(num>0){
+      last_digit=num%10;
+      resversed=resversed*10;
+      resversed=resversed+last_digit;
+      num=num/10;
+  }
+  printf("%d",resversed);
+}
