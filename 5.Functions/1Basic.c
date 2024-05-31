@@ -45,6 +45,7 @@ void usa() {
 void bharat() {
     printf("Namaskar Bharat\n");
     printf("Jai Hind\n");
+    printf("Vande Mataram\n");
     usa();  // Calling usa function in bharat function only
     return;
 }
