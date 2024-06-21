@@ -49,3 +49,35 @@ int main() {
     }
     printf("%s", sen);
 }
+
+
+//to calculate consonents and vowels:-
+#include <stdio.h>
+#include <string.h>
+int main(){
+    char str[100];
+    printf("Enter the string: \n");
+    fgets(str,100,stdin);
+    int len=strlen(str);
+    int count=0,consonents=0;
+    for(int i=0;i<len;i++){
+        if(str[i]>='A' && str[i]<='Z' ||str[i]>='a' && str[i]<='z'){
+        if(str[i]=='a' || str[i]=='e' || str[i]=='i' || str[i]=='o' || str[i]=='u' 
+        || str[i]=='A' || str[i]=='E' || str[i]=='I' || str[i]=='O' || str[i]=='U') count++;
+       else consonents++;
+    }
+    }
+    printf("%d %d",count,consonents);
+}
+
+
+
+#include <stdio.h>
+int main(){
+    int n,sum=0;
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++){
+        sum+=i;
+    }
+    printf("%d",sum);
+}

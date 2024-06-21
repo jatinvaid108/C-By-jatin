@@ -83,3 +83,23 @@ int main(){
     }
     printf("\n");
 }
+
+#include <stdio.h>
+// #define MAX_SIZE 100 // Maximum string size
+
+int main() {
+    char str[100];
+    int i;
+
+    printf("Enter your text: ");
+    gets(str);
+
+    for (i = 0; i<100; i++) {
+        if (str[i] >= 'a' && str[i] <= 'z') {
+            str[i] = str[i] - 32; // Convert lowercase to uppercase
+        }
+    }
+
+    printf("Uppercase string: %s", str);
+    return 0;
+}

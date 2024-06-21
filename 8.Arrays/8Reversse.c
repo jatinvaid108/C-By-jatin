@@ -9,7 +9,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     printf("Reversed array: \n");
-    for(int i=n-1;i>=0;i--){
+    for(int i=n-1;i>=0;i--){            //With this you won't be able to print the reverse of a negative array so follow swapping method 
         printf("%d ",arr[i]);
     }
 }
@@ -50,3 +50,5 @@ int main(){
         printf("%d ",arr[i]);   
     }
 }
+
+

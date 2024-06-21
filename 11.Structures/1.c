@@ -13,8 +13,8 @@ struct student{    //Structure is a user defined data type
 
 
 int main(){
-    struct student s1;     //Initialized the variable 
-    s1.roll=2310990784;
+    struct student s1;     //Decleraing a variable 
+    s1.roll=2310990784;    //Initialized the variable
     s1.cgpa=9.19;
     strcpy(s1.name,"Jatin Vaid");
     printf("Student name=%s\n",s1.name);

@@ -12,12 +12,11 @@ int main() {
     printf("The greatest element in array is: %d\n", mx);
     return 0;
 }
-
 //This is my self made program where i am finding 1st and 2nd largest element in an array 
 
 #include <stdio.h>
 int main(){
-    int arr[]={2,34,45,57,69,79,88,89,122,44,55,88,72};
+    int arr[]={26,34,33,30,32,27,31,25,28,29};
     int n=sizeof(arr)/sizeof(arr[0]);
     int mx=arr[0];
     int mx1=arr[1];
@@ -32,6 +31,25 @@ int main(){
         }
     }
     printf("%d %d",mx,mx1);
+}
+
+#include <stdio.h>
+int main(){
+    int arr[100];
+    int num;
+    scanf("%d",&num);
+    for(int i=0;i<num;i++){
+        scanf("%d",&arr[i]);
+    }
+    int min1=arr[0];
+    int min2=arr[1];
+    for(int i=0;i<num;i++){
+        if(arr[i]<min1) min1=arr[i];
+    }
+    for(int i=0;i<num;i++){
+        if(arr[i]>min1 && arr[i]<min2) min2=arr[i];
+    }
+    printf("%d %d",min1,min2);
 }
 
 

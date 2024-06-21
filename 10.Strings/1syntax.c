@@ -4,7 +4,7 @@ int main() {
     for (int i = 0; i < 5; i++) {
         printf("%c", arr[i]);
     }
-    printf("\n");
+    // printf("\n");
 }
 
 // Strings are type of char arrays :----------

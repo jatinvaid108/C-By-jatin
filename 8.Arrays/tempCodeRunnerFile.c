@@ -1,17 +1,19 @@
+
 #include <stdio.h>
 int main(){
-    int arr[]={2,8,7,6,5,4,33,22,12,56};
-    int n=sizeof(arr)/4;
-    int i=0;
-    int j=n-1;
-    while(i<j){
-        int temp=arr[i];
-        arr[i]=arr[j];
-        arr[j]=temp;
-        i++;
-        j--;
+    int arr[]={26,34,33,30,32,27,31,25,28,29};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    int mx=arr[0];
+    int mx1=arr[1];
+    for(int i=0;i<n;i++){
+        if(arr[i]>mx){
+            mx=arr[i];
+        }
     }
     for(int i=0;i<n;i++){
-        printf("%d ",arr[i]);   
+        if(arr[i]>mx1 && arr[i]<mx){
+            mx1=arr[i];
+        }
     }
+    printf("%d %d",mx,mx1);
 }
