@@ -61,7 +61,7 @@ This repository aims to provide a comprehensive guide to the basics of C program
 
 1. **Clone the Repository**: Fork the repository to your GitHub account and then clone it to your local machine using:
    ```sh
-   git clone https://github.com/your-username/C-Programming-Fundamentals.git
+   https://github.com/jatinvaid108/C-By-jatin.git
    ```
 
 2. **Navigate through the Topics**: Each topic is organized in separate directories. Navigate through them to find theoretical explanations and practice questions.
